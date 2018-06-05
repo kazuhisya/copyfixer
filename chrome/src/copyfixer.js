@@ -7,7 +7,7 @@ function copyfixer(event) {
     if ((!isMac && !event.ctrlKey) || (isMac && !event.metaKey)) return;
     if (isSelected()) return;
     var crlf = isWin ? "\r\n" : "\n";
-    var txt = document.title + crlf + document.location.href + crlf + crlf;
+    var txt = document.title + crlf + document.location.href + crlf;
     debugger
     copyToClipboard(txt);
 }
