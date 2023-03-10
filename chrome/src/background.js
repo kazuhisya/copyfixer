@@ -1,5 +1,6 @@
-// 不工作，请求没过来
-chrome.extension.onRequest.addListener(
+// no work, no request
+// chrome.extension.onRequest.addListener(
+chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         debugger
         // if (request.command != "copyfixerCopy") return;
